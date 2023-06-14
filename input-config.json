@@ -1,0 +1,111 @@
+{
+  "networkFactor": 0.025,
+  "clientFactor": 0.015,
+  "backboneLatencyFactor": 1.25,
+  "regionalLatencyFactor": 2.5,
+  "localLatencyFactor": 3.75,
+  "backboneBandwidthGbps": 1,
+  "regionalBandwidthGbps": 1,
+  "localBandwidthGbps": 1,
+  "clientBandwidthGbps": 1,
+  "countries": {
+    "name": "Switzerland",
+    "nodes": 3,
+    "area": 41285,
+    "population": 8700000,
+    "enablePcap": true,
+    "attackTrafficFactor": 0.7,
+    "neighbors": [
+      {
+        "name": "Germany",
+        "nodes": 8,
+        "area": 357558,
+        "population": 83200000,
+        "enablePcap": true,
+        "attackTrafficFactor": 0.7,
+        "neighbors": [
+          {
+            "name": "Belgium",
+            "nodes": 2,
+            "area": 30688,
+            "population": 11590000,
+            "enablePcap": false,
+            "attackTrafficFactor": 0.5,
+            "neighbors": [
+              {
+                "name": "UnitedKingdom",
+                "nodes": 7,
+                "area": 243610,
+                "population": 67330000,
+                "enablePcap": false,
+                "attackTrafficFactor": 0.3,
+                "neighbors": []
+              }
+            ]
+          },
+          {
+            "name": "Netherlands",
+            "nodes": 4,
+            "area": 41850,
+            "population": 17530000,
+            "enablePcap": false,
+            "attackTrafficFactor": 0.4,
+            "neighbors": []
+          }
+        ]
+      },
+      {
+        "name": "Italy",
+        "nodes": 8,
+        "area": 302073,
+        "population": 59110000,
+        "enablePcap": false,
+        "attackTrafficFactor": 0.6,
+        "neighbors": []
+      },
+      {
+        "name": "France",
+        "nodes": 9,
+        "area": 551695,
+        "population": 67750000,
+        "enablePcap": true,
+        "attackTrafficFactor": 0.7,
+        "neighbors": [
+          {
+            "name": "Spain",
+            "nodes": 5,
+            "area": 505990,
+            "population": 47420000,
+            "enablePcap": false,
+            "attackTrafficFactor": 0.4,
+            "neighbors": [
+              {
+                "name": "Portugal",
+                "nodes": 3,
+                "area": 92212,
+                "population": 10330000,
+                "enablePcap": false,
+                "attackTrafficFactor": 0.3,
+                "neighbors": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Austria",
+        "nodes": 3,
+        "area": 83871,
+        "population": 8956000,
+        "enablePcap": false,
+        "attackTrafficFactor": 0.6,
+        "neighbors": []
+      }
+    ]
+  },
+  "logPings": false,
+  "logGraphviz": false,
+  "removePcapPayload": true,
+  "attackType": "icmp-flood",
+  "cores": 10
+}
