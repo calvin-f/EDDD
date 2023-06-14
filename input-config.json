@@ -4,9 +4,9 @@
   "backboneLatencyFactor": 1.25,
   "regionalLatencyFactor": 2.5,
   "localLatencyFactor": 3.75,
-  "backboneBandwidthGbps": 1,
-  "regionalBandwidthGbps": 1,
-  "localBandwidthGbps": 1,
+  "backboneBandwidthGbps": 1000,
+  "regionalBandwidthGbps": 100,
+  "localBandwidthGbps": 10,
   "clientBandwidthGbps": 1,
   "countries": {
     "name": "Switzerland",
