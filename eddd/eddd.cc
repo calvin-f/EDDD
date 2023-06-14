@@ -1,28 +1,18 @@
-#include "chrono"
 #include "icmp-flood-attacker.h"
-#include "json.hpp"
 #include "legitimate-traffic-application.h"
-#include "legitimate-traffic-helper.h"
 #include "network-topology-creator.h"
 #include "syn-flood-attacker.h"
+#include "json.hpp"
 
 #include "ns3/applications-module.h"
-#include "ns3/bulk-send-application.h"
-#include "ns3/callback.h"
 #include "ns3/core-module.h"
-#include "ns3/internet-apps-module.h"
 #include "ns3/internet-module.h"
 #include "ns3/mpi-interface.h"
 #include "ns3/network-module.h"
 #include "ns3/packet-sink-helper.h"
-#include "ns3/packet-sink.h"
-#include "ns3/point-to-point-module.h"
-#include "ns3/point-to-point-star.h"
-#include "ns3/tag.h"
-#include "ns3/v4ping-helper.h"
-#include "ns3/v4ping.h"
 
 #include <iostream>
+#include <chrono>
 #include <random>
 
 using namespace ns3;
