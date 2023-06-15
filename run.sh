@@ -217,7 +217,7 @@ if [[ $attack_type == "syn-flood" ]]; then
           output_file="${file%.pcap}_filtered.pcap"
 
           # Execute the tshark command to filter packets with reset flag
-          tshark -r "$file" -Y "tcp.flags.reset==0" -w "$output_file"
+          tshark -r "$file" -Y "tcp.flags.reset==0" -w "$output_file" -F pcap
 
           # rename to the old names
           rm "$file"
@@ -230,6 +230,6 @@ if [ "$remove_pcap_payload" == true ]; then
   mkdir -p ShortDatasets
   for file in Datasets/*.pcap; do
     filename=$(basename "$file")
-    tshark -r Datasets/"$filename" -w ShortDatasets/"$filename" -Y "not tcp.payload"
+    tshark -r Datasets/"$filename" -w ShortDatasets/"$filename" -Y "not tcp.payload" -F pcap
   done
 fi
