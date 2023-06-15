@@ -1,6 +1,6 @@
 #!/usr/bin/env sh
 
-sudo apt install g++ python3 gdb cmake automake build-essential libsqlite3-dev libboost-all-dev libssl-dev git python3-setuptools castxml tshark
+sudo apt install g++ python3 gdb cmake automake build-essential libsqlite3-dev libboost-all-dev libssl-dev git python3-setuptools castxml tshark jq
 
 wget https://www.nsnam.org/releases/ns-allinone-3.38.tar.bz2
 tar xfj ns-allinone-3.38.tar.bz2
